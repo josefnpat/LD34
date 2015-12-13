@@ -5,8 +5,9 @@ hump = {
 }
 
 gamestates = {
-  game = require "state_game",
   splash = require "state_splash",
+  menu = require "state_menu",
+  game = require "state_game",
 }
 
 lib = {
@@ -17,7 +18,8 @@ lib = {
 splashclass = require "splashclass"
 
 fonts = {
-  default = love.graphics.newFont("IndieFlower.ttf",24)
+  default = love.graphics.newFont("IndieFlower.ttf",24),
+  title = love.graphics.newFont("IndieFlower.ttf",64),
 }
 
 colors = {

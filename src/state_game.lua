@@ -28,6 +28,7 @@ function game:enter()
 
   self.dead = false
   self.death_fade = 0
+  self.game_over = 0
 
   self.cfood = "food_bowl.png"
   self.food_offset = 0
@@ -61,7 +62,7 @@ function game:update(dt)
     self._message_dt = math.max(0,self._message_dt - dt)
   end
 
-  if not self.death and game.bind.feed() or self.food_direction == -1 then
+  if not self.dead and game.bind.feed() or self.food_direction == -1 then
     self.food_offset = self.food_offset + dt*self.food_direction*2
   else
     self.food_offset = self.food_offset - dt
@@ -84,7 +85,7 @@ function game:update(dt)
     self.food_direction = 1
   end
 
-  if not self.death and game.bind.pet() or self.pet_direction == -1 then
+  if not self.dead and game.bind.pet() or self.pet_direction == -1 then
     self.pet_offset = self.pet_offset + dt*self.pet_direction*2
   else
     self.pet_offset = self.pet_offset - dt*2
@@ -108,18 +109,22 @@ function game:update(dt)
   self.cangry = math.min(1,self.cangry + dt/30)
 
   if self.csize >= 1 then
-    self.death = true
-    self:setMessage("The cat explodes and kills you.")
+    self.dead = true
+    self:setMessage("You Win!\n(The cat explodes and kills you.)")
   end
 
   if self.cangry >= 1 then
-    self.death = true
-    self:setMessage("The cat is so angry it kills you. (Sorry!)")
+    self.dead = true
+    self:setMessage("You Lose!\n(The cat is so angry, it kills you. Sorry!)")
   end
 
 
-  if self.death then
+  if self.dead then
     self.death_fade = math.min(1,self.death_fade + dt)
+    self.game_over = self.game_over + dt
+    if self.game_over > 3 then
+      hump.gamestate.switch(gamestates.menu)
+    end
   end
 
   self.ceating = math.max(0,self.ceating - dt)
