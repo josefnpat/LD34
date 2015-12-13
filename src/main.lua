@@ -6,12 +6,15 @@ hump = {
 
 gamestates = {
   game = require "state_game",
+  splash = require "state_splash",
 }
 
 lib = {
   json = require "json",
   ilovetexpack = require "ilovetexpack",
 }
+
+splashclass = require "splashclass"
 
 fonts = {
   default = love.graphics.newFont("IndieFlower.ttf",24)
@@ -29,5 +32,5 @@ atlas:getImage():setFilter("nearest","nearest")
 
 function love.load()
   hump.gamestate.registerEvents()
-  hump.gamestate.switch(gamestates.game)
+  hump.gamestate.switch(gamestates.splash)
 end
