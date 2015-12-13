@@ -1,0 +1,276 @@
+{
+	"width": 512,
+	"height": 512,
+	"sprites": {
+		"mouth_wat.png": {
+			"x": 2,
+			"y": 2,
+			"width": 24,
+			"height": 4,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 116,
+			"yoffset": 109
+		},
+		"eyes_brow.png": {
+			"x": 28,
+			"y": 2,
+			"width": 41,
+			"height": 5,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 108,
+			"yoffset": 86
+		},
+		"eyes_wat.png": {
+			"x": 71,
+			"y": 2,
+			"width": 44,
+			"height": 5,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 106,
+			"yoffset": 94
+		},
+		"nose_normal.png": {
+			"x": 117,
+			"y": 2,
+			"width": 8,
+			"height": 6,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 124,
+			"yoffset": 102
+		},
+		"eyes_neutral.png": {
+			"x": 127,
+			"y": 2,
+			"width": 44,
+			"height": 10,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 106,
+			"yoffset": 94
+		},
+		"eyes_angry.png": {
+			"x": 173,
+			"y": 2,
+			"width": 44,
+			"height": 12,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 106,
+			"yoffset": 92
+		},
+		"mouth_eating.png": {
+			"x": 219,
+			"y": 2,
+			"width": 30,
+			"height": 12,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 113,
+			"yoffset": 107
+		},
+		"paws_normal.png": {
+			"x": 251,
+			"y": 2,
+			"width": 80,
+			"height": 13,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 88,
+			"yoffset": 130
+		},
+		"eyes_open.png": {
+			"x": 333,
+			"y": 2,
+			"width": 44,
+			"height": 15,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 106,
+			"yoffset": 89
+		},
+		"mouth_open.png": {
+			"x": 379,
+			"y": 2,
+			"width": 44,
+			"height": 24,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 106,
+			"yoffset": 107
+		},
+		"food_fish.png": {
+			"x": 425,
+			"y": 2,
+			"width": 59,
+			"height": 28,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 96,
+			"yoffset": 114
+		},
+		"food_bowl.png": {
+			"x": 2,
+			"y": 9,
+			"width": 55,
+			"height": 31,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 99,
+			"yoffset": 118
+		},
+		"food_asparagus.png": {
+			"x": 59,
+			"y": 10,
+			"width": 64,
+			"height": 57,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 96,
+			"yoffset": 104
+		},
+		"food_porcupine.png": {
+			"x": 125,
+			"y": 16,
+			"width": 75,
+			"height": 53,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 92,
+			"yoffset": 110
+		},
+		"hand_lower.png": {
+			"x": 202,
+			"y": 17,
+			"width": 86,
+			"height": 56,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 76,
+			"yoffset": 125
+		},
+		"hand_upper.png": {
+			"x": 290,
+			"y": 19,
+			"width": 86,
+			"height": 56,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 94,
+			"yoffset": 44
+		},
+		"food_beer.png": {
+			"x": 378,
+			"y": 32,
+			"width": 65,
+			"height": 60,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 102,
+			"yoffset": 91
+		},
+		"food_bag.png": {
+			"x": 445,
+			"y": 32,
+			"width": 46,
+			"height": 61,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 105,
+			"yoffset": 89
+		},
+		"food_pizza.png": {
+			"x": 2,
+			"y": 42,
+			"width": 40,
+			"height": 67,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 105,
+			"yoffset": 89
+		},
+		"food_boot.png": {
+			"x": 44,
+			"y": 69,
+			"width": 74,
+			"height": 64,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 91,
+			"yoffset": 86
+		},
+		"food_sonic.png": {
+			"x": 120,
+			"y": 75,
+			"width": 82,
+			"height": 65,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 93,
+			"yoffset": 96
+		},
+		"food_squirrel.png": {
+			"x": 204,
+			"y": 75,
+			"width": 61,
+			"height": 73,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 93,
+			"yoffset": 112
+		},
+		"tail_normal.png": {
+			"x": 267,
+			"y": 77,
+			"width": 64,
+			"height": 74,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 128,
+			"yoffset": 115
+		},
+		"food_can.png": {
+			"x": 333,
+			"y": 77,
+			"width": 41,
+			"height": 82,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 106,
+			"yoffset": 75
+		},
+		"food_goebbels.png": {
+			"x": 376,
+			"y": 94,
+			"width": 56,
+			"height": 76,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 103,
+			"yoffset": 102
+		},
+		"body.png": {
+			"x": 2,
+			"y": 135,
+			"width": 88,
+			"height": 128,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 84,
+			"yoffset": 64
+		},
+		"kaboom.png": {
+			"x": 92,
+			"y": 153,
+			"width": 223,
+			"height": 209,
+			"real_width": 256,
+			"real_height": 256,
+			"xoffset": 18,
+			"yoffset": 17
+		}
+	}
+}
