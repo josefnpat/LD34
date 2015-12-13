@@ -1,3 +1,5 @@
+math.randomseed(os.time())
+
 hump = {
   gamestate = require "gamestate",
 }

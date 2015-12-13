@@ -45,7 +45,6 @@ function ilovetexpack.render(file)
     assert(sprite._yOffset)
     sprite.getYOffset = function(self) return sprite-data._yOffset end
 
-
     sprite._quad = love.graphics.newQuad(sprite_data.x,sprite_data.y,
       sprite_data.width,sprite_data.height,data.width,data.height)
     sprite.getQuad = function(self) return self._quad end
@@ -53,6 +52,12 @@ function ilovetexpack.render(file)
     sprite._image = obj._image
     sprite.draw = function(self,x,y,r,sx,sy,ox,oy,kx,ky)
       love.graphics.draw(self._image,self._quad,x,y,r,sx,sy,ox,oy,kx,ky)
+    end
+    sprite.drawFull = function(self,x,y,r,sx,sy,ox,oy,kx,ky)
+      love.graphics.draw(self._image,self._quad,
+        (x+self._xOffset)*sx,
+        (y+self._yOffset)*sy,
+        r,sx,sy,ox,oy,kx,ky)
     end
 
     assert(not obj._sprites[sprite_name])
