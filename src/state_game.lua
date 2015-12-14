@@ -22,7 +22,7 @@ end
 function game:feedCat()
   lib.sfx("eat")
   self.cfood = "food_"..self.food[math.random(#self.food)]..".png"
-  self.csize = math.min(1,self.csize + 10.025)
+  self.csize = math.min(1,self.csize + 0.025)
 end
 
 function game:enter()
