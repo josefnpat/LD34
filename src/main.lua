@@ -13,6 +13,7 @@ gamestates = {
 lib = {
   json = require "json",
   ilovetexpack = require "ilovetexpack",
+  sfx = require "sfx",
 }
 
 splashclass = require "splashclass"
@@ -26,7 +27,7 @@ colors = {
   text_background = {0,0,0,191},
   text = {255,255,255},
   reset = {255,255,255},
-  death = {255,0,0},
+  death = {102,0,0},
 }
 
 atlas = lib.ilovetexpack.render("atlas")

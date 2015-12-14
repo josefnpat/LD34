@@ -20,6 +20,7 @@ function game:init()
 end
 
 function game:feedCat()
+  lib.sfx("eat")
   self.cfood = "food_"..self.food[math.random(#self.food)]..".png"
   self.csize = math.min(1,self.csize + 0.025)
 end
@@ -76,6 +77,7 @@ function game:update(dt)
       self.ceating = 1.5
       self:setMessage("Om nom nom nom")
     else
+      lib.sfx("angry")
       self:feedCat()
       self.cangry = math.min(1,self.cangry + 0.7)
       self:setMessage("Don't feed the cat when it's mouth is full!")
@@ -97,9 +99,11 @@ function game:update(dt)
     if self.cangry < 0.1 then
       self:setMessage("Don't pet the cat when it's not angry!")
       self.cangry = math.min(1,self.cangry+0.7)
+      lib.sfx("angry")
     else
       self:setMessage("You calm the cat.")
       self.cangry = math.max(0,self.cangry-0.2)
+      lib.sfx("purr")
     end
   elseif self.pet_offset < 0 then
     self.pet_offset = 0
@@ -108,13 +112,15 @@ function game:update(dt)
 
   self.cangry = math.min(1,self.cangry + dt/30)
 
-  if self.csize >= 1 then
+  if self.csize >= 1 and not self.dead then
     self.dead = true
+    lib.sfx("explode")
     self:setMessage("You Win!\n(The cat explodes and kills you.)")
   end
 
-  if self.cangry >= 1 then
+  if self.cangry >= 1 and not self.dead then
     self.dead = true
+    lib.sfx("murder")
     self:setMessage("You Lose!\n(The cat is so angry, it kills you. Sorry!)")
   end
 

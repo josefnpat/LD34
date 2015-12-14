@@ -1,5 +1,9 @@
 local menu = {}
 
+function menu:init()
+  lib.sfx("music")
+end
+
 function menu:draw()
   atlas:getSprites()['eyes_angry.png']:drawFull(0,0,0,2,2)
   love.graphics.setFont(fonts.title)
@@ -10,6 +14,7 @@ function menu:draw()
 end
 
 function menu:keypressed()
+  lib.sfx("meow")
   hump.gamestate.switch(gamestates.game)
 end
 
