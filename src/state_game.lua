@@ -74,7 +74,7 @@ function game:update(dt)
     self.food_direction = -1
     if self.ceating == 0 then
       self:feedCat()
-      self.ceating = 1.5
+      self.ceating = 1.25+math.random()
       self:setMessage("Om nom nom nom")
     else
       lib.sfx("angry")
