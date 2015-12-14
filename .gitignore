@@ -1,2 +1,5 @@
 src/atlas.*
+src/git.lua
 *.love
+builds/
+dev/build_data/
